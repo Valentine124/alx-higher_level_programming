@@ -3,8 +3,9 @@ def print_last_digit(number):
     last = 0
     if number < 0:
         ab = abs(number)
-        l = ab % 10
-        last = -1 * l
+        las = ab % 10
+        last = -1 * las
+        return last
     else:
         last = number % 10
-    return last
+        return last
