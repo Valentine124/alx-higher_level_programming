@@ -5,7 +5,9 @@ def print_last_digit(number):
         ab = abs(number)
         las = ab % 10
         last = -1 * las
+        print('{}'.format(last))
         return last
     else:
         last = number % 10
+        print('{}'.format(last))
         return last
