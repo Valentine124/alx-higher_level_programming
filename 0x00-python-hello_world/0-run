@@ -1,2 +1,2 @@
 #!/bin/bash
-./$PYFILE
+echo "$PYFILE" > temp.py && ./temp.py && rm temp.py
