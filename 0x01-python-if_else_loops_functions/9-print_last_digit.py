@@ -4,7 +4,7 @@ def print_last_digit(number):
     if number < 0:
         ab = abs(number)
         las = ab % 10
-        last = -1 * las
+        last = las
         print('{}'.format(last), end="")
         return last
     else:
