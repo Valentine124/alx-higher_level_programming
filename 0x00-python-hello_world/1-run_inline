@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 "${PYCODE}"
+echo "$PYCODE" > temp.py && python3 temp.py && rm temp.py
