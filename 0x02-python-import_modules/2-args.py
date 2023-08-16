@@ -12,5 +12,5 @@ if __name__ == "__main__":
         print("{} arguments:".format(ac))
 
     if ac >= 1:
-        for av in range(1, ac + 1):
-            print("{:d}: {}".format(av, argv[av]))    
+        for av in range(1, (ac + 1)):
+            print("{:d}: {}".format(av, argv[av]))
