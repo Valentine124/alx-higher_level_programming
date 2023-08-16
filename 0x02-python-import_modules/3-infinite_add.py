@@ -8,6 +8,10 @@ if __name__ == "__main__":
         integer = 0
         if num.isdigit():
             integer = int(num)
+
+        if num.startswith('-') and num[1:].isdigit():
+            integer = int(num)
+
         sum += integer
 
     print("{:d}".format(sum))
