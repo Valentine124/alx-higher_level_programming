@@ -3,6 +3,9 @@ def best_score(a_dictionary):
     if a_dictionary is None:
         return None
 
+    if a_dictionary == {}:
+        return None
+
     best = ""
     score = 0
 
