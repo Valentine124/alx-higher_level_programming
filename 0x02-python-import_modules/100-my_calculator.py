@@ -29,4 +29,4 @@ if __name__ == '__main__':
     elif sign == '/':
         result = v1 / v2
 
-    print("{} {} {} = {}".format(v1, sign, v2, result))
+    print("{} {} {} = {}".format(v1, sign, v2, int(result)))
