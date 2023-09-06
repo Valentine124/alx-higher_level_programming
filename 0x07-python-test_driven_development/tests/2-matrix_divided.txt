@@ -1,0 +1,58 @@
+===========================================
+The ``2-matrix_divided`` module doctest
+===========================================
+
+The ``matrix_divided`` function takes a list of lists as argument and an
+int to divide all element of the matrix
+
+Usage
+===========
+First impot the function ``matrix_divided`` from the module ``2-matrix_divided``
+
+	>>> import sys
+	>>> sys.path.append("..") #add the parent to the path
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+If the function takes ``None`` as argument it should return ``None``
+
+	>>> matrix_divided(None)
+	>>>
+
+If the first agument is not a list of list raise an error
+
+	>>> matrix_divided(3, 6)
+	Traceback (most recent call last):
+		...
+	TypeError: matrix must be a matrix (list of list) of integers/floats
+	>>>
+	>>> matrix = [[1, 2], [3, 4], 6, [7, 8]]
+	>>> matrix_divided(matrix, 2)
+	Traceback (most recent call last):
+		...
+	TypeError: matrix must be a matrix (list of list) of integers/floats
+
+If the rows of the matrix is of diffrent size raise an error
+
+	>>> matrix = [[1], [3, 4], [7, 8, 9]]
+	Traceback (most recent call last):
+		...
+	TypeError: Each row of the matrix must have the same size
+
+If the divisor is 0 raise an error
+
+	>>> matrix = [[1, 2], [3, 4], [7, 8]]
+	>>> div = 0
+	>>> matrix_divided(matrix, div)
+	Traceback (most recent call last):
+		...
+	ZeroDivisionError: division by zero
+
+For floats and integer each element should be divided and a new matrix
+should be returned:
+
+	>>> matrix = [[1.53, 2], [3.7, 4.0], [7, 8]]
+	>>> div = 2
+	>>> print(matrix_divided(matrix, div))
+	[[0.77, 1.0], [1.85, 2.0], [3.5, 4.0]]
+	>>> print(matrix)
+	[[1.53, 2], [3.7, 4.0], [7, 8]]
