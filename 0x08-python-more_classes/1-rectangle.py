@@ -15,7 +15,6 @@ class Rectangle:
         _height - private height
     """
 
-
     def __init__(self, width=0, height=0):
         """
         The class initializer
@@ -53,7 +52,7 @@ class Rectangle:
     @property
     def height(self):
         """
-        The getter function for 
+        The getter function for
         the height attribute
         """
 
