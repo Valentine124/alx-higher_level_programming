@@ -15,7 +15,7 @@ First impot the function ``matrix_divided`` from the module ``2-matrix_divided``
 
 If the function takes ``None`` as argument it should return ``None``
 
-	>>> matrix_divided(None)
+	>>> matrix_divided(None, None)
 	>>>
 
 If the first agument is not a list of list raise an error
