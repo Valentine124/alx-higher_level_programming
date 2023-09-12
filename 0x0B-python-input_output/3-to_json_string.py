@@ -4,6 +4,8 @@
 This module contains one function
 """
 
+import json
+
 
 def to_json_string(my_obj):
     """
