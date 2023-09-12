@@ -15,4 +15,4 @@ def lookup(obj):
         obj - The object
     """
 
-    return list(obj.__dict__)
+    return list(dir(obj))
