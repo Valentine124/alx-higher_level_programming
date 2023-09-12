@@ -19,7 +19,7 @@ def append_write(filename="", text=""):
     if filename == "" or text == "":
         return 0
 
-    while open(filename, 'a', encoding="utf-8") as f:
+    with open(filename, 'a', encoding="utf-8") as f:
         n = f.write(text)
 
         return n
