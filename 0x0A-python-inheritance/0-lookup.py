@@ -5,6 +5,7 @@ This module contains a function
 that lookup an object
 """
 
+
 def lookup(obj):
     """
     This function prints the attributes
@@ -14,4 +15,4 @@ def lookup(obj):
         obj - The object
     """
 
-    return obj.__dict__
+    return list(obj.__dict__)
