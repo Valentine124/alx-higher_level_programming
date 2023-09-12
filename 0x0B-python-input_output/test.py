@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-append_write = __import__('2-append_write').append_write
+MyClass = __import__('8-my_class').MyClass
+class_to_json = __import__('8-class_to_json').class_to_json
 
-nb_characters_added = append_write("file_append.txt", "This School is so cool!\n")
-print(nb_characters_added)
+m = MyClass("John")
+m.number = 89
+print(type(m))
+print(m)
+
+mj = class_to_json(m)
+print(type(mj))
+print(mj)
