@@ -15,6 +15,12 @@ def read_file(filename=""):
         filename - the name of the to read
     """
 
+    if filename is None:
+        return
+
+    if not (type(filename) is str):
+        return
+
     with open(filename, 'r', encoding='utf-8') as f:
         for line in f:
             print("{}".format(line))
