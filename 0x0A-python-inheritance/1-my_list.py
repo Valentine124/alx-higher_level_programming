@@ -12,11 +12,6 @@ class MyList(list):
     This class inherits from the list class
     """
 
-    def __init__(self):
-        """The initializer"""
-
-        super().__init__(self)
-
     def print_sorted(self):
         """
         This function prints the list
