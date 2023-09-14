@@ -4,7 +4,11 @@
 This module implements the typr for
 Rectangle that inherits from the
 BaseGeometry class
+The rectangle class will posess all
+The attribute of the base class
 """
+
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
