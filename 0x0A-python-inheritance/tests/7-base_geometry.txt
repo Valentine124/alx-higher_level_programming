@@ -35,17 +35,17 @@ Test the ``integer_validator`` function
 	>>> bg.integer_validator("cone", "45")
 	Traceback (most recent call last):
 		...
-	TypeError: <name> must be an integer
+	TypeError: cone must be an integer
 
 	>>> bg.integer_validator("Rectangle", 0)
 	Traceback (most recent call last):
 		...
-	ValueError: <name> must be greater than 0
+	ValueError: Rectangle must be greater than 0
 
 	>>> bg.integer_validator("name", -5)
 	Traceback (most recent call last):
 		...
-	ValueError: <name> must be greater than 0
+	ValueError: name must be greater than 0
 
 	>>> bg.integer_validator("test", 34)
 	>>> bg.integer_validator("hello", 12)
