@@ -62,6 +62,11 @@ Test the ``integer_validator`` function
                 ...
         TypeError: cone must be an integer
 
+	>>> bg.integer_validator("cone", True)
+        Traceback (most recent call last):
+                ...
+        TypeError: cone must be an integer
+
 	>>> bg.integer_validator("Rectangle", 0)
 	Traceback (most recent call last):
 		...
