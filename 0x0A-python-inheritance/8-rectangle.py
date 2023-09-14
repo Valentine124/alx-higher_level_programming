@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
 """
-This module implements the typr for Rectangle
+This module implements the typr for
+Rectangle that inherits from the
+BaseGeometry class
 """
 
 
