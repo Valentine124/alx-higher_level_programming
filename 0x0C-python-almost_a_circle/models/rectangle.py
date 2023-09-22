@@ -112,3 +112,17 @@ class Rectangle(Base):
         """
 
         return self.__height * self.__width
+
+    def display(self):
+        """
+        This function displys 
+        the rectangle instance
+        as #
+        """
+
+        for first in range(0, self.__height):
+            for sec in range(0, self.__width):
+                if sec == (self.__width - 1):
+                    print("#")
+                else:
+                    print("#", end="")
