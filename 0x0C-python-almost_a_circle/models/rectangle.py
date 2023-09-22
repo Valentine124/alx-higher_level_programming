@@ -115,7 +115,7 @@ class Rectangle(Base):
 
     def display(self):
         """
-        This function displys 
+        This function displys
         the rectangle instance
         as #
         """
