@@ -131,7 +131,13 @@ class Rectangle(Base):
         as #
         """
 
+        for sp in range(0, self.__y):
+            print()
+
         for first in range(0, self.__height):
+            for sp in range(0, self.__x):
+                print(" ", end="")
+
             for sec in range(0, self.__width):
                 if sec == (self.__width - 1):
                     print("#")
