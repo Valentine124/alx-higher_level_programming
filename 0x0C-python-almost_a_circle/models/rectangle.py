@@ -59,7 +59,7 @@ class Rectangle(Base):
         """
 
         str = f'[Rectangle] ({self.id}) {self.__x}/{self.__y} - '\
-                f'{self.__width}/{self.__height}'
+            f'{self.__width}/{self.__height}'
 
         return str
 
