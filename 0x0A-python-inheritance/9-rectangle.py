@@ -35,3 +35,15 @@ class Rectangle(BaseGeometry):
 
         super().integer_validator("width", self._Rectangle__width)
         super().integer_validator("height", self._Rectangle__height)
+
+    def area(self):
+        """
+        This computes the area of the
+        shape
+        """
+
+        return self._Rectangle__width * self._Rectangle__height
+
+    def __str__(self):
+        return f'[Rectangle] {self._Rectangle__width}/'\
+               f'{self._Rectangle__height}'
