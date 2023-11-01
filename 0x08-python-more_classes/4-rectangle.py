@@ -137,4 +137,5 @@ class Rectangle:
         of the class object
         """
 
-        return f'Rectangle({self._Rectangle__width}, {self._Rectangle__height})'
+        return f'Rectangle({self._Rectangle__width},'\
+            f' {self._Rectangle__height})'
