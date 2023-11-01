@@ -109,3 +109,32 @@ class Rectangle:
             return 0
         else:
             return 2 * (self._Rectangle__height + self._Rectangle__width)
+
+    def __str__(self):
+        """
+        Rectangle representation of the string
+        """
+
+        if self._Rectangle__height == 0 or self._Rectangle__width == 0:
+            return ""
+        else:
+            str = ""
+
+            str2 = self._Rectangle__width * "#"
+
+            str += str2
+
+            for i in range(1, self._Rectangle__height):
+                str += "\n"
+                str2 = self._Rectangle__width * "#"
+                str += str2
+
+            return str
+
+    def __repr__(self):
+        """
+        Return a string representation
+        of the class object
+        """
+
+        return f'Rectangle({self._Rectangle__width}, {self._Rectangle__height})'
