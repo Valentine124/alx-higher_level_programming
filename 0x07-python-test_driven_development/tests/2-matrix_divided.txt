@@ -1,0 +1,61 @@
+=========================================================
+Doctest for the `2-matrix_divided` module
+=========================================================
+The doctest test the `matrix_divided` function which takes
+two arguments, the matrix and the divisor
+
+Usage
+------
+To use the function, first import it
+
+	>>> import sys
+	>>> sys.path.append('..')
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test for when matrix is not a list of list of numbers
+
+	>>> m = [[1, 2], 6, [9, 8]]
+	>>> matrix_divided(m, 2)
+	Traceback (most recent call last)
+		...
+	TypeError: matrix must be a matrix (list of list) of integers/floats
+	>>> m = [[3, 4], False, '65', [9, 7]]
+	>>> matrix_divided(m, 6)
+	Traceback (most recent call last)
+		...
+	TypeError: matrix must be a matrix (list of list) of integers/floats
+	>>> m = [[2, '4'], [3, 5], [6, True]]
+	>>> matrix_divided(m, 3)
+	Traceback (most recent call last)
+                ...
+        TypeError: matrix must be a matrix (list of list) of integers/floats
+
+Test for row size
+
+	>>> m = [[1, 2], [3, 5], [1, 4, 7, 9]]
+	>>> matrix_divided(m, 5)
+	Traceback (most recent call last)
+                ...
+        TypeError: Each row of the matrix must have the same size
+
+Test for when the divisor is not an integer/floats
+
+	>>> m = [[1, 2, 3], [4, 5, 6]]
+	>>> matrix_divided(m, '6')
+	Traceback (most recent call last)
+                ...
+        TypeError: div must be a number
+
+Test for when the divisor is 0
+
+	>>> matrix_divided(m, 0)
+	Traceback (most recent call last)
+                ...
+        ZeroDivisionError: division by zero
+
+Test for integers
+
+	>>> matrix_divided(m, 3)
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+	>>> m
+	[[1, 2, 3], [4, 5, 6]]

@@ -1,0 +1,46 @@
+===============================================
+Text for `0-add_integer.py` module
+===============================================
+The module contains a function `add_integer` that adds two numbers
+and return the sum as an integer
+
+Use Cases:
+----------
+To use the function you need to first import it from its module
+
+	>>> import sys
+	>>> sys.path.append('..')
+	>>> add_func = __import__('0-add_integer').add_integer
+
+Test for when one of the parameters is not an integer
+
+	>>> add_func(True, 7)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+	>>> add_func(4, '53')
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+Test for when only one parameter is used
+
+	>>> add_func(6)
+	104
+
+Test for Negative numbers
+
+	>>> add_func(-2)
+	96
+	>>> add_func(-3, -5)
+	-8
+
+Test for floats
+
+	>>> add_func(2.8, 18.5)
+	20
+
+Test for integers
+
+	>>> add_func(40, 60)
+	100
