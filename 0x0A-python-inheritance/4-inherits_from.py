@@ -20,4 +20,9 @@ def inherits_from(obj, a_class):
         a_class - The class to check
     """
 
-    return issubclass(type(obj), a_class)
+    clss = type(obj)
+
+    if (clss is a_class):
+        return False
+
+    return issubclass(clss, a_class)
