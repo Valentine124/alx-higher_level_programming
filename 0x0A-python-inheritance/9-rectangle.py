@@ -41,7 +41,7 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         return f'[Rectangle] {self._Rectangle__width}/'\
-                '{self._Rectangle__height}'
+                f'{self._Rectangle__height}'
 
     def area(self):
         """
