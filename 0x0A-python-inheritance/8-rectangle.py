@@ -2,10 +2,11 @@
 
 """
 This module contains
-the
-Rectangle objetct blueprint
+theRectangle objetct blueprint
 that inherits from the
 Basegeometry class
+and it is used to draw
+the rectangle
 """
 
 
