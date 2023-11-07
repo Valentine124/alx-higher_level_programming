@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-This module contains 
+This module contains
 the
 Rectangle objetct blueprint
 that inherits from the
@@ -12,6 +12,7 @@ Basegeometry class
 import sys
 sys.path.append('..')
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     """
