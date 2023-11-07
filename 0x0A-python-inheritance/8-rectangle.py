@@ -10,8 +10,6 @@ the rectangle
 """
 
 
-import sys
-sys.path.append('..')
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
