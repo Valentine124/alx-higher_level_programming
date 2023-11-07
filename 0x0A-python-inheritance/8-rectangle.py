@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 """
-This module contains the
+This module contains 
+the
 Rectangle objetct blueprint
 that inherits from the
-Base geometry class
+Basegeometry class
 """
 
 
