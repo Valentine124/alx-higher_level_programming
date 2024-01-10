@@ -13,7 +13,7 @@ module.exports = class Square extends Square1 {
         let str = '';
 
         while (inner < this.width) {
-          str += 'C';
+          str += c;
           inner += 1;
         }
 
