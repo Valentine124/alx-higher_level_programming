@@ -1,2 +1,2 @@
 -- list all rows in a table
-SHOW EXPLAIN first_table;
+EXPLAIN first_table;
