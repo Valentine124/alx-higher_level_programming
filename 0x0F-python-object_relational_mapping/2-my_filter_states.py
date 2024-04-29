@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     n = argv[4]
 
-    cur.execute("SELECT * FROM states WHERE name = '{0}';".format(n))
+    cur.execute("SELECT * FROM states WHERE name = BINARY '{0}';".format(n))
 
     states = cur.fetchall()
 
