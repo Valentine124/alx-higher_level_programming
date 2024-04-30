@@ -26,7 +26,7 @@ class State(Base):
     name = Column(String(128), nullable=False)
 
     def __repr__(self):
-        return f"State(name='{self.name}')"
+        return f"{self.name}"
 
 
 if __name__ == "__main__":
