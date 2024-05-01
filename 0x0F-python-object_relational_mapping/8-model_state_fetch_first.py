@@ -21,6 +21,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
 
     with Session() as session:
-        state = session.query(State).first()
+        state = session.query(State).all()
 
-        print(f'1 {state}')
+        print(f'1 {state[0]}')
