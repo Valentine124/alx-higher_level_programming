@@ -1,12 +1,14 @@
 #!/usr/bin/node
 
-const fs = require('fs').promises;
+const process = require('process');
+const fs = require('fs');
 
-let PATH = process.argv[1];
+let PATH = process.argv[2];
 
 fs.readFile(PATH, function (err, data) {
 	if (err) {
-		return console.error(error);
+		console.error(err);
+		return;
 	}
 	console.log(data.toString());
-}
+});
