@@ -44,9 +44,9 @@ request(URL, (error, response, body) => {
 
       continue;
     }
+  }
 
-    if (noCompleted !== 0) {
-      console.log('  \'' + uId + '\': ' + noCompleted + ' }');
-    }
+  if (noCompleted !== 0) {
+    console.log('  \'' + uId + '\': ' + noCompleted + ' }');
   }
 });

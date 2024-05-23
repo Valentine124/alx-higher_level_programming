@@ -13,7 +13,7 @@ request(URL, (error, response, body) => {
   const data = JSON.parse(body);
 
   const last = data.length - 1;
-  let uId = 1;
+  let uId = data[0].userId;
   let noCompleted = 0;
 
   for (const idx in data) {
