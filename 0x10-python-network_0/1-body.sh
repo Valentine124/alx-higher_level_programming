@@ -1,3 +1,3 @@
 #!/bin/bash
 # Make a GET request with curl
-curl -s $1
+curl -s -L $1
