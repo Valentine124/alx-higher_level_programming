@@ -1,3 +1,3 @@
 #!/bin/bash
 # List the HTTP methods using curl
-curl -s -X OPTIONS $1
+curl -X OPTIONS $1
